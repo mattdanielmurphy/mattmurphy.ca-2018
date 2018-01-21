@@ -1,0 +1,125 @@
+@import 'gradient';
+
+// VARIABLES
+$textShadowOffset: 3px;
+
+$font: 'Open Sans', 'Avenir Next', 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+
+$main: white; // text, borders
+$bg: #2B2825;
+
+$maxWidth: 650px;
+
+body {
+	font: 1.1em /1.4 $font;
+	color: $main;
+	margin: 0;
+}
+
+a, a:visited {
+	color: $main;
+	line-height: 2.5;
+	text-decoration: none;
+	border-bottom: 1px solid white;
+	padding: 3px;
+	&:hover {
+		background: white;
+		color: black;
+	}
+}
+
+#contact-info {
+	text-align: center;
+	a {
+		margin: 0 1%;
+	}
+	#address {
+		margin: 1em auto;
+	}
+}
+
+#hero, footer {
+	-webkit-box-shadow: inset 0px 0px 15px 3px rgba(0,0,0,0.07);
+	-moz-box-shadow: inset 0px 0px 15px 3px rgba(0,0,0,0.07);
+	box-shadow: inset 0px 0px 15px 3px rgba(0,0,0,0.07);
+	background: rgba(255,255,255,0.05);
+}
+
+header, footer {
+	padding: 3em 0;
+}
+
+footer {
+	margin-top: 6em;
+}
+
+#hero {
+	h1 {
+		margin-top: 0;
+		font: 700 2.5em $font;
+		text-align: center;
+	}
+	padding: 70px 0 80px 0;
+	p {
+		margin: 0 auto 1em auto;
+		max-width: 500px;
+		text-indent: 2em;
+	}
+}
+
+#resume {
+	article p {
+		margin-top: 0;
+	}
+}
+
+h2 {
+	margin: 2em auto 1em auto;
+	font: 700 2em $font;
+	text-align: center;
+}
+
+h3 {
+	margin: 1.5em 0 .3em 0;
+	font: 700 1.3em $font;
+	i {
+		margin-left: .5em;
+	}
+	span {
+		font-size: .9em;
+		display: block;
+		font-style: italic;
+	}
+}
+
+h4 {
+	margin: 1.3em 0 .3em 0;
+}
+
+.tippy-tooltip.light-theme {
+	background-color: $main;
+	color: black;
+	font-size: .8em;
+	.tippy-roundarrow {
+		fill: $main
+	}
+}
+
+.stack {
+	span {
+		padding-right: .75em;
+	}
+}
+
+.main-link, .main-link:visited {
+		color: $main;
+}
+
+article {
+	padding: 0 10%;
+	max-width: $maxWidth;
+	margin: 0 auto;
+	p {
+		margin-left: 1.5em;
+	}
+}
