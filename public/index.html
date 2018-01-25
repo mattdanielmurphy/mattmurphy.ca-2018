@@ -6,128 +6,169 @@
     initial-scale=1'>
     <title>Matt Murphy</title>
 
-    <link rel='stylesheet' href='./node_modules/font-awesome/css/font-awesome.min.css'>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#333333">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="none">
+
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i" rel="stylesheet">
-    <link rel='stylesheet' href='./styles/compiled/main.min.css'>
-    <script src='./node_modules/tippy.js/dist/tippy.all.min.js'></script>
+    <link rel='stylesheet' href='css/main.css'>
+    <script src='../node_modules/tippy.js/dist/tippy.all.min.js'></script>
   </head>
   <body>
     <div id='gradient-bg'></div>
     <main>
-      <section id='resume'>
-        <header>
-          <nav id='contact-info'>
-            <a href='tel:5194047579'>(519) 404-7579</a>
-            <a href='mailto:matt@mattmurphy.ca'>matt&#64;mattmurphy.ca</a>
-            <a href='https://github.com/mattdanielmurphy/'>GitHub</a>
-            <a href='https://www.linkedin.com/in/matthew-daniel-m-00b38489'>LinkedIn</a>
-            <p id='address'>
-              <span>1-305 Dupont St</span>
-              <span>Toronto, ON</span>
-              <span>M5R 1W1</span>
-            </p>
-          </nav>
-        </header>
-
-        <div id='hero'>
-          <h1>Matthew Murphy</h1>
-          <p>
-            A full stack web developer with a strong propensity for independent learning and problem-solving. Has loved using computers since the age of ten, and first taught self to code HTML and CSS at the age of 15 purely out of self-interest.
-          </p>
-          <p>
-            Maintains a high level of conscientious in regard to all work produced. Is passionate about many intellectual hobbies; chiefly among them are avid music listening, meditation, and learning anything and everything.
-          </p>
+      <header>
+        <div id='pdf'>
+          <a class='button tooltip'
+          title='Click to download this resume as a PDF'
+          href='/resume/pdf'>
+          <i class="fas fa-download"></i> <i class="fas fa-file-pdf"></i>
+          </a>
         </div>
+        <h1>Matthew Murphy</h1>
+        <h2>< Web developer /></h2>
+        <nav id='contact-info'>
+          <a href='tel:5194047579'>(519) 404-7579</a>
+          <a href='mailto:matt@mattmurphy.ca'>matt&#64;mattmurphy.ca</a>
+          <a href='https://github.com/mattdanielmurphy/'>GitHub</a>
+          <a href='https://www.linkedin.com/in/matthew-daniel-m-00b38489'>LinkedIn</a>
+          <p id='address'>
+            <span>1-305 Dupont St</span>
+            <span>Toronto, ON</span>
+            <span>M5R 1W1</span>
+          </p>
+        </nav>
+      </header>
 
+      <section>
+        <article id='profile'>
+          <h2>Profile</h2>
+          <p>
+            A full stack web developer with a strong propensity for independent
+            learning and problem-solving. Taught self to code HTML and CSS at the age of 15 out of self-interest. Maintains a high level of
+            conscientious in regard to all work produced. Passionate about
+            many intellectual hobbies; chiefly among them are avid music
+            listening, meditation, and learning anything and everything.
+          </p>
+        </article>
+        <article id='experience'>
+          <h2>Experience</h2>
+          <h3>
+            IT Technician, Darmicon Electric
+          </h3>
+          <h4>
+            Kitchener, ON; Toronto, ON (remote) <span>2012&nbsp;-&nbsp;present</span>
+          </h4>
+          <p>
+            Assisted in various facets of IT support, including maintaining
+            desktop computers, troubleshooting issues, as well as implementing
+            and maintaining automated backup storage solution.
+            Continue to offer support remotely.
+          </p>
+          <h3>Babysitter, Linda Witt
+          </h3>
+          <h4>
+            Kitchener, ON <span>2010&nbsp;-&nbsp;2014</span>
+          </h4>
+          <p>
+            Kept child safe and occupied, maintaining communication with
+            guardians. Taught child about science, and instilled an
+            interest in computers.
+          </p>
+        </article>
+        <article id='education'>
+          <h2>Education</h2>
+          <h3>Lighthouse Labs</h3>
+          <h4>Web Development Bootcamp<span>Dec 2017&nbsp;-&nbsp;Feb 2018</span></h4>
+        </article>
+      </section>
+
+      <section>
         <article id='projects'>
           <h2>Projects</h2>
             <h3>
-              <a class='tooltip' title='Click to see the GitHub page for this project' href='https://github.com/mattdanielmurphy/Chatty'>
-                Chatty
-                <i class='fa fa-github'></i>
+              <a href="https://github.com/mattdanielmurphy/Jungle" title='Click to see the GitHub page for this project' class="tooltip">
+                Jungle
+                <i class="fab fa-github"></i>
               </a>
             </h3>
-            <p>Real-time web-chat service</p>
-              <p>Built with React, WebSockets, Webpack, Node, Express, and SASS.</p>
+            <p>
+              Jungle is a small e-commerce application with admin authentication built with Ruby on Rails 4.2 and Stripe.
+            </p>
+            <h3>
+              <a class='tooltip' title='Click to see the GitHub page for this project' href='https://github.com/mattdanielmurphy/Slick'>
+                Slick
+                <i class='fab fa-github'></i>
+              </a>
+            </h3>
+              <p>Slick is a real-time multi-user webchat app made with React, Webpack, Node-Sass, Babel, and SockJS.</p>
               <ul class='stack'>
               </ul>
             <h3>
               <a class='tooltip' title='Click to see the GitHub page for this project' href='https://github.com/mattdanielmurphy/My-Personal-Syllabus'>
                 My Personal Syllabus
-                <i class='fa fa-github'></i>
+                <i class='fab fa-github'></i>
               </a>
             </h3>
-              <p>Pinterest-style catagorizable home for links of any kind</p>
-              <p>Built with Bootstrap, PostgreSQL, jQuery, Node, Express, and SASS.</p>
+              <p>My Personal Syllabus is a multi-page pinterest clone that allows users to create their own personal syllabus of books, tutorials, articles, videos, and blogs. MPS was Built with Bootstrap, PostgreSQL, jQuery, Node, Express, and SASS.</p>
             <h3>
               <a class='tooltip' title='Click to see the GitHub page for this project' href='https://github.com/mattdanielmurphy/Tweeter'>
                 Tweeter
-                <i class='fa fa-github'></i>
+                <i class='fab fa-github'></i>
               </a>
             </h3>
-              <p>Ajax-powered Twitter clone</p>
-              <p>Built with jQuery, MongoDB, Node, Express, and SASS.</p>
+              <p>A simple single-page Twitter clone built with HTML, CSS, JavaScript, jQuery, AJAX, Node, Express, and MongoDB.</p>
             <h3>
               <a class='tooltip' title='Click to see the GitHub page for this project' href='https://github.com/mattdanielmurphy/Tiny'>
                 Tiny
-                <i class='fa fa-github'></i>
+                <i class='fab fa-github'></i>
               </a>
             </h3>
-              <p>Restful URL shortening service</p>
-              <p>Built with EJS, bcrypt, cookie-session, Node, Express, and SASS.</p>
+              <p>Tiny is a restful URL-shortener app built with EJS, bcrypt, cookie-session, Node, Express, HTML, and SASS.</p>
+            <h3>Add Me</h3>
+            <a class='tooltip' title='Click to see the GitHub page for this project' href='https://github.com/mattdanielmurphy/Add-Me'>
+              Add Me
+            </a>
+              <p>
+                Add me is simple two player adding game with customizable difficulty built with Ruby.
+              </p>
         </article>
 
-        <article id='experience'>
-          <h2>Experience</h2>
-          <h3>
-            IT Technician, Darmicon Electric<br>
-            <span>
-                Kitchener, ON; Toronto, ON (remote) — 2012-present
-            </span>
-          </h3>
-          <p>
-            Assisted in various facets of IT support, including maintaining desktop computers, troubleshooting issues, as well as implementing and maintaining automated backup storage solution. Continue to offer support remotely.
-          </p>
-          <h3>Babysitter, Linda Witt
-            <span>Kitchener, ON — 2010-2014</span>
-          </h3>
-          <p>
-            Kept child safe and occupied, maintaining communication with guardians. Taught child about science, and instilled an interest in computers.
-          </p>
-        </article>
-        <article id='education'>
-          <h2>Education</h2>
-          <h3><a href='https://lighthouselabs.ca'>Lighthouse Labs</a> Web Dev. Bootcamp — 2017-2018</h3>
-          <h3>Fort Saskatchewan High School, Diploma — 2016-2017</h3>
-          <h3>Cameron Heights Collegiate Institute — 2011-2016</h3>
-          <p>97% final grade in web development class (taken 1 year early)</p>
-        </article>
         <article id='skills'>
           <h2>Technical Skills</h2>
           <h4>Languages</h4>
             <p class='stack'>
               <span>JavaScript</span>
+              <span>Ruby</span>
               <span>EJS</span>
               <span>SQL</span>
-              <span>HTML</span>
-              <span>CSS</span>
+              <span>HTML5</span>
+              <span>CSS3</span>
               <span>SASS</span>
             </p>
-          <h4>Libraries</h4>
+          <h4>Libraries &amp; Frameworks</h4>
             <p class='stack'>
-              <span>jQuery</span>
+              <span>Node.js</span>
               <span>React</span>
+              <span>Ruby on Rails</span>
+              <span>Express</span>
+              <span>jQuery</span>
+              <span>Bootstrap</span>
             </p>
-          <h4>Databases</h4>
+          <h4>Databases / Other</h4>
             <p class='stack'>
               <span>MongoDB</span>
               <span>PostgreSQL</span>
-            </p>
-          <h4>Frameworks</h4>
-            <p class='stack'>
-              <span>Bootstrap</span>
-              <span>Express</span>
-              <span>Rails</span>
+              <span>AJAX</span>
+              <span>Git</span>
             </p>
           <h4>Design</h4>
             <p class='stack'>
@@ -135,20 +176,16 @@
               <span>Illustrator</span>
             </p>
         </article>
-        <footer>
-          <nav id='contact-info'>
-            <a href='tel:5194047579'>(519) 404-7579</a>
-            <a href='mailto:matt@mattmurphy.ca'>matt&#64;mattmurphy.ca</a>
-            <a href='https://github.com/mattdanielmurphy/'>GitHub</a>
-            <a href='https://www.linkedin.com/in/matthew-daniel-m-00b38489'>LinkedIn</a>
-            <p id='address'>
-              <span>1-305 Dupont St</span>
-              <span>Toronto, ON</span>
-              <span>M5R 1W1</span>
-            </p>
-          </nav>
-        </footer>
       </section>
+      <footer>
+        <nav id='contact-info'>
+          <a href='tel:5194047579'>(519) 404-7579</a>
+          <a href='mailto:matt@mattmurphy.ca'>matt&#64;mattmurphy.ca</a>
+          <a href='https://github.com/mattdanielmurphy/'>GitHub</a>
+          <a href='https://www.linkedin.com/in/matthew-daniel-m-00b38489'>LinkedIn</a>
+          <p>Made in 2018 by Matthew Murphy.</p>
+        </nav>
+      </footer>
     </main>
     <script type='text/javascript'>
       tippy('.tooltip', {
