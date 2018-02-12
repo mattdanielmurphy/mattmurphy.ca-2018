@@ -1,0 +1,175 @@
+@import '../gradient';
+
+// VARIABLES
+$textShadowOffset: 3px;
+
+$font: 'Open Sans', 'Avenir Next', 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+
+$main: white; // text, borders
+$bg: #2B2825;
+
+$maxWidth: 650px;
+
+#pdf {
+	position: absolute;
+	left: 1em;
+	top: 1em;
+}
+
+body {
+	font: 400 1.1em /1.4 $font;
+	color: $main;
+	margin: 0;
+}
+
+a, a:visited {
+	color: $main;
+	line-height: 2.5;
+	text-decoration: none;
+	border-bottom: 1px solid white;
+	padding: 0 4px 1px 4px;
+	&:hover {
+		background: white;
+		color: black;
+	}
+}
+
+a.button {
+	padding: .4em .5em .5em .5em;
+	background: rgba(255,255,255,0.05);
+	border: 2px solid rgba(255,255,255,0.7);
+	&:hover {
+		background: white;
+	}
+}
+
+#contact-info {
+	text-align: center;
+	a {
+		margin: 0 1%;
+	}
+	#address {
+		margin: 1em auto 0 auto;
+	}
+}
+
+header, footer {
+	padding: 3em 0;
+	flex: 1 100%;
+	@media (max-width: 1000px) {
+		background: rgba(255,255,255,0.05)
+	}
+}
+
+section {
+	@media (min-width: 1000px) {
+		flex: 3;
+		max-width: 1400px;
+		margin: 0 auto;
+		padding: 2em .3em 4.5em .3em;
+		background: rgba(0,0,0,0.02);
+		&:first-of-type {
+			background: rgba(255,255,255,0.02);
+		}
+		h2 {
+			text-align: left;
+		}
+		article {
+			max-width: 550px
+		}
+	}
+	&:last-of-type {
+		padding-bottom: 4em;
+	}
+	flex: 1 100%;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+main {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	article p {
+		margin-top: 0;
+	}
+}
+
+h1 {
+	margin: 1.5em auto .25em auto;
+	font: 700 2.5em $font;
+	text-align: center;
+	text-shadow: .1em .1em rgba(0,0,0,0.1);
+}
+
+header {
+	h2 {
+		margin-top: 0;
+		font-weight: 400;
+	}
+}
+
+h2 {
+	margin: 2em auto 1em auto;
+	font: 700 1.7em $font;
+	text-align: center;
+}
+
+h3 {
+	margin: 1.4em 0 .3em 0;
+	font: 700 1.3em/1 $font;
+	i {
+		margin-left: .1em;
+	}
+}
+
+h4 {
+	margin: .3em 0 .3em 0;
+}
+
+#experience, #education {
+	h4 {
+		margin: .5em 0 .6em 0;
+		span {
+			font-weight: 500;
+			font-size: .95em;
+			float: right;
+		}
+	}
+
+	h3 {
+		span {
+			font-size: .8em;
+			float: right;
+			font-weight: 500;
+		}
+	}
+
+}
+
+.tippy-tooltip.light-theme {
+	background-color: $main;
+	color: black;
+	font-size: .8em;
+	.tippy-roundarrow {
+		fill: $main
+	}
+}
+
+.stack {
+	span {
+		padding-right: .75em;
+	}
+}
+
+.main-link, .main-link:visited {
+		color: $main;
+}
+
+article {
+	padding: 0 1em;
+	margin: 0 auto;
+	p {
+		margin-left: 1.5em;
+	}
+}

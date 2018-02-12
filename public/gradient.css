@@ -1,0 +1,1 @@
+#gradient-bg{background:#854747;animation:hue 180s infinite linear;position:fixed;top:-300px;bottom:-300px;left:-300px;right:-300px;z-index:-1}@-webkit-keyframes hue{from{-webkit-filter:hue-rotate(0deg)}to{-webkit-filter:hue-rotate(-360deg)}}
